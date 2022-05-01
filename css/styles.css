@@ -399,8 +399,8 @@ background: #343434;
   }
 }
 
-.media.service-box:hover .pull-left > i {  
-}
+/* .media.service-box:hover .pull-left > i {  
+} */
 #portfolio {
   padding: 140px 0;
   background: #FFFFFF;
@@ -584,6 +584,7 @@ position: relative;
 -webkit-transition: all 0.2s ease;
 -moz-transition: all 0.2s ease;
 -ms-transform: all 0.2s ease;
+transform: all 0.2s ease;
 -o-transition: all 0.2s ease;
 transition: all 0.2s ease;
 margin-bottom:30px;
@@ -635,10 +636,10 @@ color: rgb(40, 141, 203);
 	font-size: 17px;
 	letter-spacing: 2px;
 	margin-bottom: 185px;
-	moz-border-radius: 3px;
+	-moz-border-radius: 3px;
 	padding: 12px 37px;
 	transition: all 0.5s ease;
-	webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	margin-top: 20px;
 }
 .download-btn:hover, .download-btn:focus
