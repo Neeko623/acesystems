@@ -303,19 +303,61 @@ background: #343434;
   background: #FFFFFF;
   color: #000;
 }
+.product-title {
+  position: relative;
+  top: -8rem;
+  left: 25rem;
+}
+.product-description {
+  position: relative;
+  top: -16rem;
+  left: 25rem;
+  padding: 0 2rem;
+  min-width: 30rem;
+  max-width: 65rem;
+}
+@media (max-width: 45rem){
+  .product-title h2 {
+    font-size: 3rem!important;
+  }
+}
+.features {
+  display: flex;
+  flex-direction: column;
+}
 
+.feature-items {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width:62rem) {
+  .feature-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #features .media.service-box:first-child {
   margin-top: 80px;
 }
 #services {
   padding: 140px 0 75px;
 }
+
+.media-heading {
+  text-align: center;
+}
+.media-item {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 .media.service-box {
   margin: 25px 0 36px;
   padding: 20px 15px 10px;
   background: #FFFFFF;
   overflow: hidden;
-  border-bottom: 2px solid #E0E0E0;
+  /* border-bottom: 2px solid #E0E0E0; */
 }
 .media.service-box .pull-left {
   margin-right: 0px;
@@ -340,8 +382,25 @@ background: #343434;
   left: 14px;
 }
 
-.media.service-box:hover .pull-left > i {  
+.solution-container {
+  display: flex;
+  justify-content: space-between;
 }
+
+.solution-item {
+  margin: 0 3rem;
+  text-align: left;
+}
+
+@media (max-width: 48rem) {
+  .solution-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* .media.service-box:hover .pull-left > i {  
+} */
 #portfolio {
   padding: 140px 0;
   background: #FFFFFF;
@@ -525,6 +584,7 @@ position: relative;
 -webkit-transition: all 0.2s ease;
 -moz-transition: all 0.2s ease;
 -ms-transform: all 0.2s ease;
+transform: all 0.2s ease;
 -o-transition: all 0.2s ease;
 transition: all 0.2s ease;
 margin-bottom:30px;
@@ -576,10 +636,10 @@ color: rgb(40, 141, 203);
 	font-size: 17px;
 	letter-spacing: 2px;
 	margin-bottom: 185px;
-	moz-border-radius: 3px;
+	-moz-border-radius: 3px;
 	padding: 12px 37px;
 	transition: all 0.5s ease;
-	webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	margin-top: 20px;
 }
 .download-btn:hover, .download-btn:focus
@@ -622,7 +682,9 @@ color: #4F4F4F;
 .download-now h2{
 color: #fff !important;
 }
-
+#contact{
+  margin: 4rem 0;
+}
 /***********************
 ********* Footer ******
 ************************/
