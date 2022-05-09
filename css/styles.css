@@ -303,19 +303,17 @@ background: #343434;
   background: #FFFFFF;
   color: #000;
 }
-.product-title {
+.product-container {
   position: relative;
   top: -8rem;
-  left: 25rem;
-}
-.product-description {
-  position: relative;
-  top: -16rem;
-  left: 25rem;
-  padding: 0 2rem;
+  padding: 0 6rem;
   min-width: 30rem;
   max-width: 65rem;
 }
+.product-title {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 45rem){
   .product-title h2 {
     font-size: 3rem!important;
@@ -694,6 +692,7 @@ color: #fff !important;
   color: #fff;
   background: #222222;
   font-size: 13px;
+  text-align: center;
 }
 #footer a {
   color: #fff;
